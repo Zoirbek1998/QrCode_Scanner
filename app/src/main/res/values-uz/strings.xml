@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"QR orqali toping "</string>
+    <string name="hello_blank_fragment">Salom bosh parcha</string>
+    <string name="enter_code">Kodni kiriting</string>
+    <string name="scane_code">Kodni skanerlash</string>
+    <string name="ruxsat_sorash">Suratga olish uchun ushbu dastur sizning kamerangizga kirishga muhtoj</string>
+    <string name="ruxsat_berilgan">Ruxsat berilgan</string>
+    <string name="jatija_eslatma">Natija eslatmasi topildi</string>
+    <string name="kodni_kirgazish_sorov">Iltimos, kodni kiriting</string>
+    <string name="enter_code_here">Kodni bu yerga kiriting</string>
+    <string name="enter">Ulashish</string>
+    <string name="scaner_qr_code_here">Skanerning QR kodi bu yerda</string>
+    <string name="enter_qr_code_here">Bu yerda Qr kodini kiriting</string>
+</resources>

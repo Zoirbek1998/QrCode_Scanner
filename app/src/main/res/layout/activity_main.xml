@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+            <ImageView
+                android:id="@+id/btnMenu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="invisible"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_usa" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tillar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="5dp"
+                app:cardElevation="4dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tillar" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            // scayner qilganidan keyingi holati
+            <androidx.cardview.widget.CardView
+                android:id="@+id/catdView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp"
+
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtCode"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/edt_back"
+                        android:hint="@string/enter_code_here"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:textColorHint="@color/black"
+                        android:visibility="visible" />
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      >
+
+                      <com.google.android.material.button.MaterialButton
+                          android:id="@+id/btnEnter"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textAllCaps="false"
+                          android:text="@string/enter"
+                          android:layout_margin="5dp"
+                          app:cornerRadius="10dp" />
+                      <com.google.android.material.button.MaterialButton
+                          android:id="@+id/btnWep"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textAllCaps="false"
+                          android:text="Chrome"
+                          android:layout_margin="5dp"
+                          app:cornerRadius="10dp" />
+
+                  </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            // Scayner qilish uchun rasim
+            <androidx.cardview.widget.CardView
+                android:id="@+id/catdView2"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                app:contentPadding="50dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_qr_code" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnScan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="@string/scane_code"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEnterCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPriymeryDark"
+                android:text="@string/enter_code"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+</FrameLayout>

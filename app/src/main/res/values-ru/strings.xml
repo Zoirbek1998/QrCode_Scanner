@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"QR orqali toping "</string>
+    <string name="hello_blank_fragment">Привет пустой фрагмент</string>
+    <string name="enter_code">Введите код</string>
+    <string name="scane_code">Сканировать код</string>
+    <string name="ruxsat_sorash">Этому приложению требуется доступ к вашей камере, чтобы вы могли делать снимки.</string>
+    <string name="ruxsat_berilgan">Разрешение получено</string>
+    <string name="jatija_eslatma">Обнаружена заметка о результатах</string>
+    <string name="kodni_kirgazish_sorov">Пожалуйста, введите код</string>
+    <string name="enter_code_here">Введите код сюда</string>
+    <string name="enter">Войти</string>
+    <string name="scaner_qr_code_here">QR-код сканера здесь</string>
+    <string name="enter_qr_code_here">Введите здесь QR-код</string>
+</resources>

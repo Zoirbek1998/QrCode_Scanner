@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">QR orqali toping</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="scane_code">Scane Code</string>
+    <string name="ruxsat_sorash">This app needs access to your camera so you can take pictures</string>
+    <string name="ruxsat_berilgan">Permission Granted</string>
+    <string name="jatija_eslatma">Result Note Found</string>
+    <string name="kodni_kirgazish_sorov">Please enter code</string>
+    <string name="enter_code_here">Enter Code Here</string>
+    <string name="enter">Enter</string>
+    <string name="scaner_qr_code_here">Scaner QR Code Here</string>
+    <string name="enter_qr_code_here">Enter Qr Code Here</string>
+</resources>
